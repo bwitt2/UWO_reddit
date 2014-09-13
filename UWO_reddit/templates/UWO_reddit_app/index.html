@@ -1,1 +1,14 @@
-<h1>Success</h1>
+{% extends 'base.html' %}
+{% block title %}Welcome to Western Groups!{% endblock %}
+
+{% block content %}
+    {% if posts %}
+        <ul>
+        {% for post in posts %}
+            {% include "post.html" %}
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no posts.</p>
+    {% endif %}
+{% endblock %}

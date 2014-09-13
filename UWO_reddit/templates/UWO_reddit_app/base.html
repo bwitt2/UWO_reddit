@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{% block head_title %}Western Groups{% endblock %}</title>
+    </head>
+    <body>
+    	<div>
+	        <img src="logo.jpg" alt="Our logo" style="width:50px;height:50px">
+	        <h1>{% block title %}Welcome to Western Groups{% endblock %}</h1>
+        </div>
+        <div>
+        {% block content %}
+
+        {% endblock %}
+        </div>
+    </body>
+</html>
