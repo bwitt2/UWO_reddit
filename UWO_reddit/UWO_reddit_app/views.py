@@ -16,6 +16,5 @@ def display(request, primary_key):
 	context = RequestContext(request, {
 		
 		})
-	}
 	return HttpResponse()
 
