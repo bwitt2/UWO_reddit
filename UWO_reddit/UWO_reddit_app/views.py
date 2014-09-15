@@ -14,8 +14,7 @@ def index(request):
 def display(request, primary_key):
 	template = loader.get_template('UWO_reddit_app/display.html')
 	context = RequestContext(request, {
-		
+
 		})
-	}
 	return HttpResponse()
 
