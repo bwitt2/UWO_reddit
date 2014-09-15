@@ -11,7 +11,7 @@ class Category(models.Model):
 
 
 class SubCategory(models.Model):
-    category = models.ForeignKey(Category)
+    parent = models.ForeignKey(Category)
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=400)
 
@@ -20,7 +20,7 @@ class SubCategory(models.Model):
 
 
 class Post(models.Model):
-    subcatgegory = models.ForeignKey(SubCategory)
+    parent = models.ForeignKey(SubCategory)
     title = models.CharField(max_length=200)
     time_posted = models.DateTimeField('Time Posted', auto_now_add=True)
     content = models.TextField()
@@ -30,7 +30,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post)
+    parent = models.ForeignKey(Post)
     time_commented = models.DateTimeField('Time Commented', auto_now_add=True)
     content = models.TextField()
 
