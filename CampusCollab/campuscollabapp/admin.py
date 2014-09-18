@@ -1,5 +1,5 @@
 from django.contrib import admin
-from UWO_reddit_app.models import Category, SubCategory, Post, Comment
+from campuscollabapp.models import Category, SubCategory, Post, Comment
 
 # Register your models here.
 admin.site.register(Category)

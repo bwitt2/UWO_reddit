@@ -1,11 +1,11 @@
-{% extends 'UWO_reddit_app/base.html' %}
+{% extends 'campuscollabapp/base.html' %}
 {% block title %}Welcome to Western Groups!{% endblock %}
 
 {% block content %}
     {% if posts %}
         <ul>
         {% for post in posts %}
-            {% include "UWO_reddit_app/post.html" %}
+            {% include "campuscollabapp/post.html" %}
         {% endfor %}
         </ul>
     {% else %}

@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-from UWO_reddit_app import views
+from campuscollabapp import views
 
 urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls)),
